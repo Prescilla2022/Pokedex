@@ -1,0 +1,90 @@
+body {
+  background-color: rgb(22, 22, 48);
+  display: block;
+}
+nav {
+  text-align: center;
+  background-color: rgb(22, 22, 48);
+  border: 2px solid #fed269;
+}
+button {
+  background-color: transparent;
+  border: 4px solid #fed269;
+  color: #fed269;
+  border: none;
+  font-size: 70px;
+  font-family: "Covered By Your Grace", cursive;
+}
+.card {
+  height: 300px;
+  width: 200px;
+  background-color: rgb(22, 22, 48);
+  border: 1px solid #fed269;
+  border-radius: 20px;
+  text-align: center;
+  color: #fed269;
+  margin: auto;
+  box-shadow: 10px solid;
+  font-family: "Covered By Your Grace", cursive;
+  transition: all 150ms;
+  --hover-rot: 0deg;
+  --img-hover-scale: 1;
+  --img-hover-rotX: 0deg;
+  --img-hover-rotY: 0deg;
+  --text-hover-scale: 1;
+  /*display: block;*/
+}
+.cardDetails {
+  height: 200px;
+  width: 200px;
+  background-color: rgb(22, 22, 48);
+  border: none;
+  border-radius: 20px;
+  text-align: center;
+  color: #fed269;
+  margin: auto;
+  box-shadow: 10px solid;
+  font-family: "Covered By Your Grace", cursive;
+  transition: all 150ms;
+  --hover-rot: 0deg;
+  --img-hover-scale: 1;
+  --img-hover-rotX: 0deg;
+  --img-hover-rotY: 0deg;
+  --text-hover-scale: 1;
+  display: block;
+}
+.card:hover,
+.card:active {
+  filter: brightness(90%) contrast(120%);
+  outline-color: orange;
+  --hover-rot: 360deg;
+  --img-hover-scale: -1.5;
+  --text-hover-scale: 1.5;
+  --img-hover-rotX: -360deg;
+  --img-hover-rotY: 180deg;
+  transform: scale(1.05) translate(0, -8px);
+  box-shadow: 0 0 41px 14px #aaa2003f, 0 0 8px 8px #200,
+    inset 0 0 34px 0 #0000007f;
+}
+.poke-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 50px;
+  row-gap: 50px;
+  margin-top: 50px;
+}
+img {
+  margin-top: 0;
+  height: 200px;
+  width: 200px;
+}
+.pokemondetails {
+  display: hidden;
+}
+h2 {
+  font-size: 30px;
+}
+h4 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 10px;
+}
